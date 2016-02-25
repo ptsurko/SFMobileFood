@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title></title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <link href='node_modules/mapbox-gl/dist/mapbox-gl.css' rel='stylesheet' />
+  <link href='bower_components/reset-css/reset.css' rel='stylesheet' />
+  <link href='css/main.css' rel='stylesheet' />
+  <link href='js/components/searchbox.css' rel='stylesheet' />
+</head>
+<body ng-app="mobilefood">
+  <header class="header">
+    <h1 class="header__title">SF Food Trucks</h1>
+    <p class="header__description">San Francisco's finger-licking street food now at your fingertips.</p>
+  </header>
+  <main class="main" ng-view>
+  </main>
+  <footer>
+
+  </footer>
+  <script src='node_modules/mapbox-gl/dist/mapbox-gl.js'></script>
+  <script src='bower_components/angular/angular.js'></script>
+  <script src='bower_components/angular-route/angular-route.js'></script>
+  <script src='bower_components/rxjs/dist/rx.all.js'></script>
+  <script src='bower_components/rx-angular/dist/rx.angular.js'></script>
+  <script src='js/app.js'></script>
+  <script src='js/components/map.directive.js'></script>
+  <script src='js/components/searchbox.component.js'></script>
+  <script src='js/components/searchfilter.component.js'></script>
+  <script src='js/components/searchresults.component.js'></script>
+  <script src='js/services/foodfacilities.service.js'></script>
+  <script src='js/services/searchfilter.service.js'></script>
+  <script src='js/services/facilitiesstore.service.js'></script>
+  <script src='js/pages/main.controller.js'></script>
+  <script>
+  // mapboxgl.accessToken = 'pk.eyJ1IjoicHRzdXJrbyIsImEiOiJjaWs2MGF4dDIwMG1qdmRrdGJtdzZpa3pmIn0.f8CqNzi_zLf8wtQRlubAGw';
+  // var map = new mapboxgl.Map({
+  //   container: element[0],
+  //   style: 'mapbox://styles/mapbox/streets-v8',
+  //   center: [-122.44, 37.77],
+  //   zoom: 12
+  // });
+
+  // $.ajax('/food.json')
+  //   .done(function(result) {
+  //     var features = [];
+  //     result.data.forEach(function(row) {
+  //       var lat = parseFloat(row[22], 10);
+  //       var long = parseFloat(row[23], 10);
+  //
+  //       if (!isNaN(long) && !isNaN(lat)) {
+  //         features.push({
+  //           "type": "Feature",
+  //           "geometry": {
+  //             "type": "Point",
+  //             "coordinates": [long, lat]
+  //           },
+  //           "properties": {
+  //             "title": "Mapbox SF",
+  //             "marker-symbol": "star",
+  //             "marker-size": "medium",
+  //             "marker-color": "#3bb2d0",
+  //             "type": row[10],
+  //             "applicant": row[9],
+  //             "description": row[19]
+  //           }
+  //         })
+  //       }
+  //     });
+  //
+  //     map.on('load', function () {
+  //       map.addSource("markers", {
+  //         "type": "geojson",
+  //         "data": {
+  //           "type": "FeatureCollection",
+  //           "features": features
+  //         }
+  //       });
+  //
+  //       map.addLayer({
+  //         "id": "markers",
+  //         "type": "symbol",
+  //         "source": "markers",
+  //         "layout": {
+  //           "icon-image": "{marker-symbol}-15",
+  //           // "text-field": "{title}",
+  //           // "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+  //           // "text-offset": [0, 0.6],
+  //           "text-anchor": "top"
+  //         }
+  //       });
+  //       // map.setFilter("markers", ["==", "type", "Push Cart"]);
+  //     });
+  //
+  //
+  //   });
+  </script>
+</body>
+</html>

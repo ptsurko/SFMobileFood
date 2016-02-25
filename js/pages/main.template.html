@@ -1,0 +1,6 @@
+<map facilities="ctrl.facilitiesGeoJson" class="col-map map" center="[-122.44, 37.77]", zoom="12" style="mapbox://styles/mapbox/streets-v8"></map>
+<aside class="col-side">
+  <search-box on-search="ctrl.searchFacilities(query)" query="{{ctrl.filter.query}}"></search-box>
+  <search-filter on-filter-change="ctrl.filterFacilities(category, item, value)" filter="ctrl.filter"></search-filter>
+  <search-results></search-results>
+</aside>

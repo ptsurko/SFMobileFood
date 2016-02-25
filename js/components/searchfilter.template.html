@@ -1,0 +1,12 @@
+<div class="filter">
+  <div class="filter__category">
+    <label class="filter__category-name">Facility Type:</label>
+    <ul class="filter__category-items">
+      <li class="filter__item" ng-repeat="type in $ctrl.filter.type">
+        <label class="filter__checkbox-item">
+          <input type="checkbox" ng-model="type.selected" ng-change="$ctrl.onFilterChange({category: 'type', item: type.type, value: type.selected})">{{type.type}}
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>

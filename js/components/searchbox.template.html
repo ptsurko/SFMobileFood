@@ -1,0 +1,6 @@
+<form class="search-box" role="search">
+  <div class="input-group">
+    <input class="form-control search-box__input" type="text" ng-model="$ctrl.query" placeholder="Burgers, Tacos or Wraps?">
+    <button class="input-group__addon search-box__button" ng-click="$ctrl.onSearch({query: $ctrl.query})">Search</button>
+  </div>
+</form>

@@ -1,0 +1,63 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: #0273D4;
+  height: 65px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-shadow: -2px 2px black;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.header__description {
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 12px;
+  margin: 0;
+}
+
+.main {
+}
+
+.col-map {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 0;
+  right: 25%;
+}
+
+.col-side {
+  background: #ECEFF1;
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 75%;
+  right: 0;
+  border-left: 1px solid #aaa;
+}
+
+.form-control {
+  outline: none;
+}
+
+.input-group {
+  display: table;
+}
+
+.inpit-group__addon {
+  display: table-cell;
+}
+
+.input-group > .form-control {
+  display: table-cell;
+}
